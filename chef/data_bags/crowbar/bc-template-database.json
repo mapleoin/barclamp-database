@@ -8,7 +8,9 @@
         "datadir": "/var/lib/mysql"
       },
       "postgresql": {
-        "max_connections": 1000
+        "config": {
+          "max_connections": 1000
+        }
       },
       "ha": {
         "storage": {

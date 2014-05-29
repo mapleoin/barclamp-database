@@ -27,8 +27,14 @@
             "postgresql" : {
               "type": "map",
               "required": false,
-              "mapping" : {
-                "max_connections": { "type": "int" }
+              "mapping": {
+                "config": {
+                  "type": "map",
+                  "required": false,
+                  "mapping": {
+                    "max_connections": { "type": "int" }
+                  }
+                }
               }
             },
             "ha" : {
